@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="description" content="NetherFlix is an entertainment discovery platform that makes finding Movies, Web Series, TV Shows and Anime easier. Search less, discover more — across genres, languages and eras, with authorized streaming integrations." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="NetherFlix" />
+    <meta name="keywords" content="NetherFlix, watch movies online, web series, TV shows, anime, entertainment discovery, search movies, find anime, streaming" />
+    <meta name="application-name" content="NetherFlix" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NetherFlix" />
+    <meta property="og:title" content="NetherFlix — Movies, Web Series, TV Shows & Anime Discovery" />
+    <meta property="og:description" content="NetherFlix makes discovering Movies, Web Series, TV Shows and Anime easier. Search less, discover more — all in one clean platform." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NetherFlix — Movies, Web Series, TV Shows & Anime Discovery" />
+    <meta name="twitter:description" content="Discover Movies, Web Series, TV Shows and Anime in one clean, easy-to-use platform." />
+    
+    <title>NetherFlix — Movies, Web Series, TV Shows & Anime Discovery</title>
+
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://api.themoviedb.org" crossorigin />
+    <link rel="preconnect" href="https://api.tmdb.org" crossorigin />
+    <link rel="preconnect" href="https://image.tmdb.org" crossorigin />
+    <link rel="dns-prefetch" href="https://image.tmdb.org" />
+    <link rel="dns-prefetch" href="https://api.themoviedb.org" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;450;500;550;600;650;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/src/index.css" />
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
